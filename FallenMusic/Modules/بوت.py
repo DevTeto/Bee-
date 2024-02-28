@@ -1,13 +1,13 @@
 import asyncio
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from pyrogram import filters, Client
-from FallenMusic.filters import command
 from FallenMusic import app
+from FallenMusic.filters import command
 
 # Replace the following line with your actual OWNER_ID
 OWNER_ID = 123456789
 
-@app.on_message(filters.command(['بوت'], prefixes=""))
+@app.on_message(command(['بوت'], prefixes=""))
 async def Italymusic(client: Client, message: Message):
     me = await client.get_me()
     bot_username = me.username
@@ -19,10 +19,10 @@ async def Italymusic(client: Client, message: Message):
     chat_id = message.chat.id
     try:
         member = await client.get_chat_member(chat_id, user_id)
-        if user_id == 6975380739:
-             rank = "- لقد انضم هنا مطور السورس ♥️✨"
+        if user_id == 5089553588:
+             rank = "يالهوي ده مالك السورس بنفسو ياعيال في البار😱⚡️"
         elif user_id == OWNER_ID:
-             rank = "- مالك البوت"
+             rank = "مـالك الـبوت العظمه 🫡⚡️"
         elif member.status == 'creator':
              rank = "مـالك الـبـار 🫡⚡️"
         elif member.status == 'administrator':

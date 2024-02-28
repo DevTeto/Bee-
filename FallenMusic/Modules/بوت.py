@@ -4,9 +4,6 @@ from pyrogram import filters, Client
 from FallenMusic import app
 from FallenMusic.filters import command
 
-# Replace the following line with your actual OWNER_ID
-OWNER_ID = 123456789
-
 @app.on_message(command(['بوت'], prefixes=""))
 async def Italymusic(client: Client, message: Message):
     me = await client.get_me()
@@ -19,7 +16,7 @@ async def Italymusic(client: Client, message: Message):
     chat_id = message.chat.id
     try:
         member = await client.get_chat_member(chat_id, user_id)
-        if user_id == 5089553588:
+        if user_id == 6975380739:
              rank = "يالهوي ده مالك السورس بنفسو ياعيال في البار😱⚡️"
         elif user_id == OWNER_ID:
              rank = "مـالك الـبوت العظمه 🫡⚡️"

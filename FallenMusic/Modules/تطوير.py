@@ -11,7 +11,7 @@ from FallenMusic import app
 
 
 @app.on_message(
-    command(["سورس","السورس","المطور"])
+    command(["تيتو","سورس","السورس","المطور","احمد"])
     & filters.group
 )
 async def maker(client: Client, message: Message):

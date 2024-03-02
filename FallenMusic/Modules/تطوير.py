@@ -11,7 +11,7 @@ from FallenMusic import app
 
 
 @app.on_message(
-    command(["تيتو","سورس","السورس","المطور","احمد"])
+    command(["سورس","السورس","المطور"])
     & filters.group
 )
 async def maker(client: Client, message: Message):
@@ -22,14 +22,13 @@ async def maker(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "- مطور السورس .", url=f"https://t.me/G_7_Rr"),
+                        "- مطور السورس .", url=f"https://t.me/WZAERE"),
                 ],
                 [
                    InlineKeyboardButton(
-                        "- قناة المطور ", url=f"https://t.me/wx_pm"),
+                        "- قناة المطور ", url=f"https://t.me/WX_PM"),
                 ],       
             ]
         ),
     )
-
 
